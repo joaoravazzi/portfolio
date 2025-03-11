@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Projeto Portfólio">
+		<meta name="author" content="Jao Ravazzi">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+
+		<!-- Link para a Folha de Estilo da Página - CSS -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<title>Meu Perfil</title>
+	</head>
+	<body>
+		<!-- Cabeçalho da Página (header) -->
+		<header>
+
+			<!-- Div Conteudo do Cabeçalho -->
+			<div id="header_content" class="flex">
+
+				<!-- Titulo do Cabeçalho -->
+				<div id="titulo">
+
+					<!-- Seu nome -->
+					<h1>Joao Ravazzi</h1>
+
+				</div>
+
+				<!-- Conteudo do Menu da Página (header) -->
+				<div id="menu">
+
+					<!-- Menu da Página -->
+					<nav>
+
+						<!-- Marcadores não ordenados + links -->
+						<ul id="menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<!-- Seção Principal da Página (main) -->
+		<main>
+
+			 <!-- Seção Formulário de Contato e Redes Sociais -->
+             <section id="contact" class="flex">
+
+                <!-- Seção do Formulário -->
+                <form action="#" method="submit" id="formulario">
+                    <label for="name">Nome: </label>
+					<input
+						id="name"
+						type="text"
+						name="name"
+						placeholder="Digite seu nome"
+						required
+					/>
+					<span id="txtNome"></span>
+
+					<label for="email">Email: </label>
+					<input
+						id="email"
+						type="text"
+						name="email"
+						placeholder="Digite seu email"
+						required
+					/>
+					<span id="txtEmail"></span>
+
+					<label for="subject">Assunto: </label>
+					<input
+						id="subject"
+						type="text"
+						name="subject"
+						placeholder="Digite o título da mensagem"
+						required
+					/>
+					<span id="txtSubject"></span>
+
+					<label for="message">Mensagem: </label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Digite sua mensagem"
+						required
+					>
+					</textarea>
+
+					<button type="submit">Enviar</button>   
+                </form>
+
+                <!-- Seção do Google Maps -->
+                <article id="mapa" class="flex_start">
+					<div id="endereco">
+                    <p>Rua Teste, 123</p>
+	                <p>Itajobi - SP</p>
+				</div>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14868.067786774398!2d-49.06587583582242!3d-21.31034669594337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94be98f56f8b4ea7%3A0x3b6cfe79439f63b2!2sItajobi%2C%20SP%2C%2015840-000!5e0!3m2!1spt-BR!2sbr!4v1740665998317!5m2!1spt-BR!2sbr" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
+                </article>
+                
+            </section>
+
+		</main>
+
+		<!-- Rodapé da Página (footer) -->
+		<footer class="flex">
+
+			<!-- Seção de Contato - Redes Sociais-->
+			<section id="redes_sociais">
+
+				<a href="">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
+				</a>
+
+			</section>
+
+			<h3>Espero que gostem, obrigado!! 🐼</h3>
+
+		</footer>
+
+			<!-- Script JavaScript-->
+			<script src="./assets/js/script.js"></script>
+
+	</body>
+</html>
